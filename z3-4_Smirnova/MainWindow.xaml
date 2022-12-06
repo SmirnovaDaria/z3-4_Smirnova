@@ -15,8 +15,8 @@
 
         </Frame>
         <DockPanel>
-            <Button Content="Склад" Height="40" Width="100" Margin="20,0" Click="NavigateWarsehouse" Style="{StaticResource TextBlock}"/>
-            <Button Content="Строительные материалы" Height="40" Width="250" HorizontalAlignment="Left" Click="NavigateMaterial" Style="{StaticResource TextBlock}"/>
+            <Button Content="Склад" Height="40" Width="100" Margin="20,0" Click="NavigateWarsehouse" Style="{StaticResource TextBlock}" Foreground="Orange" Background="White" FontWeight="Medium"/>
+            <Button Content="Строительные материалы" Height="40" Width="250" HorizontalAlignment="Left" Click="NavigateMaterial" Style="{StaticResource TextBlock}" Foreground="Orange" Background="White" FontWeight="Medium"/>
         </DockPanel>
     </Grid>
 </Window>

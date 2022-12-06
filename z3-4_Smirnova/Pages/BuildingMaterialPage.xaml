@@ -8,7 +8,33 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="BuildingMaterialPage">
 
-    <Grid Background="PaleGreen">
-        
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="300*"/>
+            <RowDefinition Height="60*"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="1" Content="Создать материал" Style="{StaticResource TextBlock}" FontWeight="Medium" Background="Orange" Foreground="White" Height="40" Width="200" HorizontalAlignment="Left" Margin="20,0,0,0" Click="AddMaterial"/>
+        <ListView x:Name="ListViewBuilding" Grid.Row="0">
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel></StackPanel>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <DockPanel Style="{StaticResource TextBlock}" Margin="20,0,0,0" PreviewMouseLeftButtonDown="ExitMaterial">
+                            <TextBlock Text="{Binding Title}" Width="200"/>
+                            <TextBlock Text="{Binding UnitID}" Width="50"/>
+                            <TextBlock Text="{Binding Remains}" Width="50"/>
+                            <TextBlock>
+                                <Run Text="№"/>
+                                <Run Text="{Binding WarehouseID}"/>
+                            </TextBlock>
+                        </DockPanel>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </Page>

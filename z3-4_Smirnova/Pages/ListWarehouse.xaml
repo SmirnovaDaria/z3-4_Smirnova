@@ -9,6 +9,11 @@
       Title="ListWarehouse">
 
     <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="300*"/>
+            <RowDefinition Height="60*"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="1" Content="Создать склад" Style="{StaticResource TextBlock}" FontWeight="Medium" Background="Orange" Foreground="White" Height="40" Width="200" HorizontalAlignment="Left" Margin="20,0,0,0" Click="AddWarehouse"/>
         <ListView x:Name="ListViewWarehouse">
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
@@ -18,7 +23,7 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid>
-                        <DockPanel Style="{StaticResource TextBlock}" Margin="20,0,0,0">
+                        <DockPanel Style="{StaticResource TextBlock}" Margin="20,0,0,0" PreviewMouseLeftButtonDown="ExitWarehouse">
                             <TextBlock Width="50">
                                 <Run Text = "№"/>
                                 <Run Text = "{Binding ID}"/>

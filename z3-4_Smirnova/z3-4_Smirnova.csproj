@@ -75,6 +75,12 @@
     <Compile Include="MaterialType.cs">
       <DependentUpon>DB_Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AddExitPage.xaml.cs">
+      <DependentUpon>AddExitPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AddExitPageMaterial.xaml.cs">
+      <DependentUpon>AddExitPageMaterial.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\BuildingMaterialPage.xaml.cs">
       <DependentUpon>BuildingMaterialPage.xaml</DependentUpon>
     </Compile>
@@ -109,6 +115,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\AddExitPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AddExitPageMaterial.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\BuildingMaterialPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

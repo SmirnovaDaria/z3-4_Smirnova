@@ -26,5 +26,15 @@ namespace z3_4_Smirnova.Pages
             var data = Entities.GetContext().Warehouse.ToList();
             ListViewWarehouse.ItemsSource = data;
         }
+
+        private void AddWarehouse(object sender, RoutedEventArgs e)
+        {
+            MainWindow.MainFrameWindow.Content = new Pages.AddExitPage();
+        }
+
+        private void ExitWarehouse(object sender, MouseButtonEventArgs e)
+        {
+            MainWindow.MainFrameWindow.Content = new Pages.AddExitPage();
+        }
     }
 }

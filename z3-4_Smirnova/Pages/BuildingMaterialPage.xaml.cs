@@ -23,6 +23,18 @@ namespace z3_4_Smirnova.Pages
         public BuildingMaterialPage()
         {
             InitializeComponent();
+            var data = Entities.GetContext().BuildingMaterials.ToList();
+            ListViewBuilding.ItemsSource = data;
+        }
+
+        private void ExitMaterial (object sender, MouseButtonEventArgs e)
+        {
+            MainWindow.MainFrameWindow.Content = new Pages.AddExitPageMaterial();
+        }
+
+        private void AddMaterial(object sender, RoutedEventArgs e)
+        {
+            MainWindow.MainFrameWindow.Content = new Pages.AddExitPageMaterial();
         }
     }
 }
