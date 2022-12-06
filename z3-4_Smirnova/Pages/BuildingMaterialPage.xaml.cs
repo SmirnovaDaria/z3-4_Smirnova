@@ -16,15 +16,13 @@ using System.Windows.Shapes;
 namespace z3_4_Smirnova.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для ListWarehouse.xaml
+    /// Логика взаимодействия для BuildingMaterialPage.xaml
     /// </summary>
-    public partial class ListWarehouse : Page
+    public partial class BuildingMaterialPage : Page
     {
-        public ListWarehouse()
+        public BuildingMaterialPage()
         {
             InitializeComponent();
-            var data = Entities.GetContext().Warehouse.ToList();
-            ListViewWarehouse.ItemsSource = data;
         }
     }
 }

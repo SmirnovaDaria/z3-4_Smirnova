@@ -27,5 +27,15 @@ namespace z3_4_Smirnova
             MainFrameWindow = MainFrame;
             MainFrameWindow.Content = new Pages.ListWarehouse();
         }
+
+        private void NavigateMaterial(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Content = new Pages.BuildingMaterialPage();
+        }
+
+        private void NavigateWarsehouse(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Content = new Pages.ListWarehouse();
+        }
     }
 }

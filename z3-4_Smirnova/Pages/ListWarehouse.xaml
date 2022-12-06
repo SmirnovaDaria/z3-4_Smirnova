@@ -9,6 +9,27 @@
       Title="ListWarehouse">
 
     <Grid Background="White">
-        
+        <ListView x:Name="ListViewWarehouse">
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel></StackPanel>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <DockPanel Style="{StaticResource TextBlock}" Margin="20,0,0,0">
+                            <TextBlock Width="50">
+                                <Run Text = "№"/>
+                                <Run Text = "{Binding ID}"/>
+                            </TextBlock>
+                            <TextBlock Text="{Binding Address}" Width="200"/>
+                            <TextBlock Text="{Binding MaterialTypeID}" Width="50"/>
+                            <TextBlock Text="{Binding Distance}" Width="50"/>
+                        </DockPanel>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </Page>

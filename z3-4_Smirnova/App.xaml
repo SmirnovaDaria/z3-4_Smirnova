@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:z3_4_Smirnova"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style x:Key="TextBlock">
+            <Setter Property="TextBlock.FontSize" Value="16"/>
+        </Style>
     </Application.Resources>
 </Application>

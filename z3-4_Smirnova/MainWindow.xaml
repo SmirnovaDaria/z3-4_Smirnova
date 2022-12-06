@@ -11,12 +11,12 @@
             <RowDefinition Height="50*"/>
             <RowDefinition Height="300*"/>
         </Grid.RowDefinitions>
-        <Frame x:Name="MainFrame" Grid.Row="1">
+        <Frame x:Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden">
 
         </Frame>
         <DockPanel>
-            <Button Content="Склад" Height="50" Width="200" Margin="20,0"/>
-            <Button Content="Строительные материалы" Height="50" Width="200" HorizontalAlignment="Left"/>
+            <Button Content="Склад" Height="40" Width="100" Margin="20,0" Click="NavigateWarsehouse" Style="{StaticResource TextBlock}"/>
+            <Button Content="Строительные материалы" Height="40" Width="250" HorizontalAlignment="Left" Click="NavigateMaterial" Style="{StaticResource TextBlock}"/>
         </DockPanel>
     </Grid>
 </Window>
