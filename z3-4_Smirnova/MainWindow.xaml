@@ -15,8 +15,8 @@
 
         </Frame>
         <DockPanel>
-            <Button Content="Склад" Height="50" Width="200" />
-            <Button Content="Строительные материалы" Height="50" Width="200"/>
+            <Button Content="Склад" Height="50" Width="200" Margin="20,0"/>
+            <Button Content="Строительные материалы" Height="50" Width="200" HorizontalAlignment="Left"/>
         </DockPanel>
     </Grid>
 </Window>
